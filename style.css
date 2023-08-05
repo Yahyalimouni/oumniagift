@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300;400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5em;
+    background-color: #1b1619;
+}
+
+.logo {
+    transform: scale(0.7);
+    margin-left: 4em;
+}
+
+nav {
+    top: 0%;
+    width: 25%;
+    margin-right: 30%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+nav li{
+    display: inline-block;
+    position: relative;
+    transition: ease .4s;
+}
+
+nav li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffe4c4;
+    transition: all 0.4s;
+}
+
+nav li a:hover{
+    color: #f976d0;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #050505;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav li:hover ul {
+    display: block;
+    z-index: 999;
+    box-shadow: 3px 3px 15px #000;
+}
+
+nav li ul li {
+    display: block;
+}
+
+nav li ul li a{
+    display: flex;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid rgba(236, 230, 230, 0.2);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right,
+     rgba(0,0,0,0.7),
+     rgba(0,0,0,0.4),
+     rgba(0,0,0,0.5)),
+     url(backpink.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.welcome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px auto 150px ;
+    /* background-color: #0c0a0a; */
+    width: 40%;
+    height: 500px;
+}
+
+.welcome p {
+    position: absolute;
+    bottom: 10%;
+    color: #ffe4c4;
+    font-size: 6em;
+    font-weight: 400;
+    font-family: serif;
+    text-shadow: 5px 2px 10px #050505;
+    line-height: 7.5rem;
+}
+
+p span {
+    color: #f976d0;
+    font-weight: 800;
+}
+
+.welcome button {
+    position: absolute;
+    top: 98%;
+    cursor: pointer;
+    width: fit-content;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 3em;
+    background-image: linear-gradient(to right,
+    #6b094c,
+    #81426d,
+    #643957);
+    color: #ffe4c4;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    transition: ease-in 0.2s;
+    box-shadow: 0px 5px 10px #332d2d;
+    text-shadow: 1px 2px 5px #000;
+    opacity: 0.8;
+}
+
+.welcome button:hover {
+    color: #fff;
+    opacity: 1;
+    background-image: linear-gradient(to left,#6b094c,
+    #8d4e79,
+    #721456);
+    box-shadow: 2px 5px 10px #332d2d;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform: scale(0.9);
+    width: 600px;
+    height: 600px;
+    margin:  auto auto 170px ;
+    overflow: hidden;
+    border-radius: 42% 56% 52% 48% / 57% 31% 69% 43%;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 15px #000,
+    inset -10px -10px 10px #000,
+    inset 5px 10px 10px #000;
+}
+
+.image-container img {
+    transform: scale(1.35);
+}
+
+/* -----------------GRATITUDE--------------- */
+
+.Graditude {
+    width: 100%;
+    min-height: 140vh;
+    background-color: #1b1619;
+}
+
+.part1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+    background-color: #241c21;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    backdrop-filter: blur(4px);
+    background-color: #1b1619;
+    box-shadow: 3px 3px 30px #000;
+    box-shadow: inset 2px 2px 5px #000;
+    height: 70vh;
+    width: 70%;
+    overflow: hidden;
+}
+
+.part1 .container img {
+    z-index: -1;
+    display: flex;
+    margin-right: 4em;
+}
+
+.part1 .description {
+    animation: slideleft 2s ease backwards;
+}
+
+.description {
+    width: 40%;
+    height: 100%;
+    margin: 1em 0 ;
+    display: flex;
+    flex-direction: column;
+    color: #ffe4c4;
+}
+
+.headers {
+    font-size: 1.7em;
+    margin: 0 0 2em;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.headers h1 span {
+    color: #a81e7c;
+}
+
+.headers h4 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.text .maintext {
+    font-family: 'roboto';
+    font-size: 2rem;
+    line-height: 1.5em;
+    text-indent: 0.5rem;
+}
+
+.text .maintext span {
+    color: #a81e7c;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.text .textfooter {
+    color: #6d6a67;
+    margin-top: 7em;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: italic;
+}
+
+.part2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1619;
+    width: 100%;
+    height: 120vh;
+}
+
+.part2 .container {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #241c21;
+}
+
+.imgcontainer {
+    background-color: #000;
+    width: 40%;
+    overflow: hidden;
+}
+
+.imgcontainer img {
+    position: relative;
+    right: 40%;
+}
+
+.part2 .headers {
+    margin-bottom: 1.9rem;
+}
+
+.part2 .description {
+    padding-top: 1.5rem;
+    margin-right: 7em;
+}
+
+.part2 .maintext {
+    font-size: 1.85rem;
+}
+
+.part2 .textfooter {
+    margin-top: 3.1rem;
+}
+/* ALL SECTIONS EDIT */
+
+
+/*------------------ PRESENTATION SECTION--------------- */
+
+#Presentation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 120vh;
+    width: 100%;
+    background-color: #241c21;
+}
+
+.globalheader {
+    color: #ffe4c4;
+    padding: 1rem 1.5rem;
+    border-left: 10px solid rgba(114, 20, 86,1);
+    position: absolute;
+    top: 6rem;
+    left: 5%;
+    font-size: 4rem;
+}
+
+#Presentation:hover .globalheader {
+    animation: slideright 1s ease forwards;
+}
+
+/* The content container */
+
+#Presentation .pr-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 70%;
+    perspective: 800px;
+}
+
+/* The image */
+
+#Presentation .imgcontainer {
+    background-color: transparent;
+    position: relative;
+    height: 95%;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+#Presentation img {
+    box-shadow: 10px 30px 20px #000;
+    position: absolute;
+    right: 0rem;
+    transform: scale(1.3);
+    object-fit: cover;
+    transform:rotateX(10deg) rotateY(-30deg);
+}
+
+/* The text */
+
+#Presentation .pr-container .description {
+    box-sizing: border-box;
+    z-index: 1;
+    width: 60%;
+    height: 100%;
+    padding: 2rem 3rem;
+}
+
+section:hover .description{
+    animation: fadein 2s ease;
+ }
+
+#Presentation h2 {
+    font-size: 2.3rem;
+}
+
+#Presentation h2 span {
+    color: #a81e7c;
+}
+
+#Presentation .parag {
+    margin: 3rem 0;
+}
+
+#Presentation .parag .p1::first-letter {
+    font-family: 'serif';
+    font-size: 3rem;  
+    font-weight: 700;
+    margin-right: 0.2rem; 
+    color: #a81e7c;
+}
+
+#Presentation .description p {
+    color: #beae9b;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-indent: 1rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+/* The footer */
+
+#Presentation .description .pfooter {
+    font-family: 'roboto';
+    font-weight: 100;
+    font-size: 0.9rem;
+    font-style: oblique;
+    color: #beae9b9a;
+}
+
+
+/* ----------------------- THE SURPRISE ------------------------ */
+
+#The-Surprise {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    background: linear-gradient(to right,
+    rgba(0,0,0,1),
+    rgba(0,0,0,.1),
+    rgba(0,0,0,0.7)),
+    url('backsurprise.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: -10rem;
+}
+
+#The-Surprise .globalheader {
+    top: 7rem;
+}
+
+#The-Surprise .container {
+    display: flex;
+    justify-content: space-between;
+    height: 87vh;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: 5px;
+    margin-bottom: 6rem;
+    border-radius: 5px;
+}
+
+#The-Surprise .container .description {
+    padding: 3rem 2rem;
+}
+
+#The-Surprise .container .description h2 {
+    font-size: 3rem;
+}
+
+#The-Surprise .container .description h2 span {
+    color: #a81e7c;
+}
+
+#The-Surprise .container .description p {
+    color: #cdc1b0;
+    margin:3rem 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'roboto';
+    line-height: 2.5rem;
+    text-indent: 1rem;
+}
+
+#The-Surprise .container .description p span {
+    font-style: oblique;
+    font-weight: 100;
+}
+
+.btn button {
+    box-sizing: border-box;
+    padding: 10px 30px; 
+    cursor: pointer;
+    color: rgb(194, 177, 156);
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(to top right,
+    #721456,
+    #776070,
+    #721456);
+    border-radius: 60px;
+    border: none;
+    transition: 200ms ease-in-out;
+}
+
+.btn button:hover {
+    color: #fff;
+    background: linear-gradient(to bottom left,
+    #776070,
+    #721456,
+    #776070);
+}
+
+/* -----------------GALLERY--------------------- */
+
+#Gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 110vh;
+    width: 100%;
+    background-color: #1b1619;
+}
+
+#Gallery .description {
+    position: relative;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 3rem;
+}
+
+/* ----Icons------- */
+
+#cercle1, #cercle2 {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+}
+
+#cercle1 {
+    top: 5rem;
+    left: 10rem;
+    opacity: 0.3;
+}
+
+#cercle2 {
+    bottom: 5rem;
+    left: 25%;
+    opacity: 0.3;
+}
+
+#square {
+    position: absolute;
+    bottom: 50%;
+    left: 45%;
+    opacity: 0.3;
+    transform: rotate(45deg);
+    height: 150px;
+    width: 110px;
+}
+
+#Gallery .description h2 {
+    word-spacing: 0.5rem;
+    line-height: 4rem;
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+#Gallery .description h2 span {
+    font-weight: 900;
+    color: #a81e7c;
+}
+
+.slider {
+    transform: scale(0.85);
+    width:607px;
+    height: 850px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.images input {
+    display: none;
+}
+
+.dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.dots label {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    border: 2px solid #9c8484;
+    box-shadow: 3px 3px 10px 2px #000;
+    border-radius: 50%;
+    margin: 0.3rem;
+    transition: all 300ms;
+}
+
+.dots label:hover {
+    border: 2px solid #fff;
+    background-color: #fff;
+    transform: scale(1.2);
+}
+
+#img1:checked ~ .image1 {
+    margin-left: 0;
+}
+
+#img2:checked ~ .image2 {
+    margin-left: -100%;
+}
+
+#img3:checked ~ .image3 {
+    margin-left: -200%;
+}
+
+#img4:checked ~ .image4 {
+    margin-left: -300%;
+}
+
+#img5:checked ~ .image5 {
+    margin-left: -400%;
+}
+
+#img6:checked ~ .image6 {
+    margin-left: -500%;
+}
+
+
+/* KEYFRAMES ANIMATIONS */
+
+@keyframes slideright {
+    0% {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideleft {
+    0% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity:1;
+    }
+}
+
+section:hover .description{
+    animation: slideright 1.5s ease forwards ; 
+}
+
+section:hover #Gratitude .description {
+    animation:none;
+}
+
+section:hover .globalheader {
+    animation: slideright 1.5s ease forwards ; 
+}
+
+
+
